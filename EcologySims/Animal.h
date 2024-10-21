@@ -31,6 +31,7 @@ public:
         life(life_), hunger(hunger_), isFlipped(isFlipped_), moveDirection(moveDirection_), moving(moving_), hungerBar(hungerBar_), lifeBar(lifeBar_) {
 
         currentFrame = 0;
+        moverHungerAndLifeBarsToCurrentPosition();
 
     }
 
@@ -41,7 +42,10 @@ public:
         life(other.life), hunger(other.hunger), hungerBar(other.hungerBar),currentFrame(other.currentFrame), lifeBar(other.lifeBar), moveDirection(other.moveDirection), moving(other.moving) {}
 
     // Destructor
-    ~Animal() = default;
+    virtual ~Animal() = default;
+
+    // Abstract method (pure virtual function)
+    virtual bool isPrey() = 0;
 
     // Getters
     std::shared_ptr<std::vector<sf::Texture>> getGifFrames() const { return gifFrames; }
@@ -102,10 +106,12 @@ public:
 
             // Move the object in the direction of the target
             objectSprite.move(moveDirection.x * speed, moveDirection.y * speed);
+            moverHungerAndLifeBarsToCurrentPosition();
 
             // If the object is close enough to the target, stop moving
             if (std::abs(targetPos.x - currentPos.x) < 1.f && std::abs(targetPos.y - currentPos.y) < 1.f) {
                 objectSprite.setPosition(targetPos);  // Snap to the exact position
+                moverHungerAndLifeBarsToCurrentPosition();
                 moving = false;  // Stop moving
 
                 return true;
@@ -120,6 +126,11 @@ public:
 
     void updateLifeBar() {
         lifeBar.setSize(sf::Vector2f(life, 10));
+    }
+
+    void moverHungerAndLifeBarsToCurrentPosition() {
+        hungerBar.setPosition(sf::Vector2f(objectSprite.getPosition().x, objectSprite.getPosition().y));
+        lifeBar.setPosition(sf::Vector2f(objectSprite.getPosition().x, objectSprite.getPosition().y + 10));
     }
 
     // Function to get the normalized direction from the current position to the target
