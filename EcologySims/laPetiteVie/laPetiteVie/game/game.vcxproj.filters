@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game\src\main.cpp" />
+    <ClCompile Include="game\src\states\choiceBox\ChoiceBoxState.cpp" />
+    <ClCompile Include="game\src\states\dialogue\DialogueState.cpp" />
+    <ClCompile Include="game\src\states\mainMenu\MainMenuState.cpp" />
+    <ClCompile Include="game\src\states\map\Map0000.cpp" />
+    <ClCompile Include="game\src\gameObjects\camera\CameraInputComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\camera\FollowCameraPhysicComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\camera\CameraRenderComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\MoveDownCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\MoveLeftCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\MoveRightCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\MoveUpCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\PlayerInputComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\PlayerPhysicComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\PlayerSpriteRenderComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\NPC\FixedOnGroundPhysicComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\NPC\OrangeCuteRenderComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\NPC\SimpleDialogNPCInputComponent.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\RotateLeftCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\RotateRightCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\bar\BarRenderComponent.cpp" />
+    <ClCompile Include="game\src\states\map\Map0001.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\jumpCommand.cpp" />
+    <ClCompile Include="game\src\states\factory\UIFactory.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\ActionCommand.cpp" />
+    <ClCompile Include="game\src\states\map\MapState.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\RunCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\StopRunCommand.cpp" />
+    <ClCompile Include="game\src\states\postProcess\blackBar\BlackBarPostProcessState.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\AimCommand.cpp" />
+    <ClCompile Include="game\src\gameObjects\player\command\StopAimCommand.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\src\states\choiceBox\ChoiceBoxState.h" />
+    <ClInclude Include="game\src\states\dialogue\DialogueState.h" />
+    <ClInclude Include="game\src\states\mainMenu\MainMenuState.h" />
+    <ClInclude Include="game\src\states\map\Map0000.h" />
+    <ClInclude Include="game\src\gameObjects\camera\CameraInputComponent.h" />
+    <ClInclude Include="game\src\gameObjects\camera\FollowCameraPhysicComponent.h" />
+    <ClInclude Include="game\src\gameObjects\camera\CameraRenderComponent.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\MoveDownCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\MoveLeftCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\MoveRightCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\MoveUpCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\PlayerInputComponent.h" />
+    <ClInclude Include="game\src\gameObjects\player\PlayerPhysicComponent.h" />
+    <ClInclude Include="game\src\gameObjects\player\PlayerSpriteRenderComponent.h" />
+    <ClInclude Include="game\src\gameObjects\NPC\FixedOnGroundPhysicComponent.h" />
+    <ClInclude Include="game\src\gameObjects\NPC\OrangeCuteRenderComponent.h" />
+    <ClInclude Include="game\src\gameObjects\NPC\SimpleDialogNPCInputComponent.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\RotateLeftCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\RotateRightCommand.h" />
+    <ClInclude Include="game\src\gameObjects\bar\BarRenderComponent.h" />
+    <ClInclude Include="game\src\states\map\Map0001.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\jumpCommand.h" />
+    <ClInclude Include="game\src\states\factory\UIFactory.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\ActionCommand.h" />
+    <ClInclude Include="game\src\states\map\MapState.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\RunCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\StopRunCommand.h" />
+    <ClInclude Include="game\src\states\postProcess\blackBar\BlackBarPostProcessState.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\AimCommand.h" />
+    <ClInclude Include="game\src\gameObjects\player\command\StopAimCommand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\shader\postProcess\postprocess.frag" />
+    <None Include="media\shader\postProcess\postProcess.vert" />
+    <None Include="media\shader\terrain\terrain.frag" />
+    <None Include="media\shader\terrain\terrain.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_color.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_color.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_depth.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_depth.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_position.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_position.vert" />
+    <None Include="media\shader\postProcess\blackBar.vert" />
+    <None Include="media\shader\postProcess\blackBar.frag" />
+    <None Include="media\data\theme\FF7.json" />
+    <None Include="media\shader\transition\transition.vert" />
+    <None Include="media\shader\transition\transition.frag" />
+  </ItemGroup>
+</Project>

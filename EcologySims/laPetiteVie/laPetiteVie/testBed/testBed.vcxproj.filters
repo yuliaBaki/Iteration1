@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test_bed\src\main.cpp" />
+    <ClCompile Include="test_bed\src\states\mainMenu\MainMenuState.cpp" />
+    <ClCompile Include="test_bed\src\states\editor\EditorState.cpp" />
+    <ClCompile Include="..\dependencies\imgui-master\imgui.cpp" />
+    <ClCompile Include="..\dependencies\imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="..\dependencies\imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="..\dependencies\imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="..\dependencies\imgui-sfml-master\imgui-SFML.cpp" />
+    <ClCompile Include="..\dependencies\imgui-master\imgui_tables.cpp" />
+    <ClCompile Include="..\dependencies\imGuIZMO.quat-master\imGuIZMO.quat\imGuIZMOquat.cpp" />
+    <ClCompile Include="test_bed\src\gameObjects\point\PointPhysicComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test_bed\src\states\mainMenu\MainMenuState.h" />
+    <ClInclude Include="test_bed\src\states\editor\EditorState.h" />
+    <ClInclude Include="test_bed\src\gameObjects\point\PointPhysicComponent.h" />
+    <ClInclude Include="test_bed\src\vendor\imfilebrowser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\shader\terrain\terrain.frag" />
+    <None Include="media\shader\terrain\terrain.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_color.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_color.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_depth.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_depth.vert" />
+    <None Include="media\shader\terrain\terrain_fixed_position.frag" />
+    <None Include="media\shader\terrain\terrain_fixed_position.vert" />
+  </ItemGroup>
+</Project>

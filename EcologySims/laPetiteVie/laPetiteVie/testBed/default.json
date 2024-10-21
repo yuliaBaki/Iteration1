@@ -1,0 +1,45 @@
+{
+    "image_static": [
+        
+    ],
+    "lights": [
+    ],
+    "seed": [],
+    "sprite_static": [],
+    "version": 0.353,
+  "voxel_terrain": {
+    "FOV": 1024,
+    "LOD": 0.07999999821186066,
+    "LOD_startAt": 47.0,
+    "SpriteRenderDistance": 705.0,
+    "angle": 0.0,
+    "blur_type": 2,
+    "height": 20.0,
+    "horizon": 235.0,
+    "isViewTypeFixed": true,
+    "normal_blur_iteration": 6,
+    "normal_blurr": {
+      "x": 10.0,
+      "y": 0.10000000149011612
+    },
+    "offsetCameraPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "position": {
+      "x": -82.0,
+      "y": 200.0,
+      "z": 196.0
+    },
+    "scaleHeight": 128.0,
+    "screen_height": 768.0,
+    "screen_width": 1024.0,
+    "shininess": 32.0,
+    "terrainRenderDistance": 705.0,
+    "terrain_collision_height_path": "media/image/2048/terrain_height.png",
+    "terrain_collision_mask_path": "media/image/2048/terrain_mask.png",
+    "terrain_color_path": "media/image/2048/terrain_color.png",
+    "terrain_height_path": "media/image/2048/terrain_height.png"
+  }
+}
